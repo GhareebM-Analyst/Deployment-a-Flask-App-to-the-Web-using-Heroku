@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Cost</title>
+
+    
+    
+</head>
+<body>
+<style>
+body{background-color: rgb(171, 187, 152);
+    margin: auto;
+    max-width: 500px;
+    
+}
+
+</style>
+
+    <h2> Insurance Cost</h2>
+
+         
+<form action="{{ url_for('predict')}}"method="post">
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('predict')}}"method="post">
+    <label for="age">Enter the Age</label>
+    <input type="text" name="age" placeholder="18 - 64" required="required" /><br>
+    <br>
+    <label for="Sex"> Select the Gender</label><br>
+    <input type="radio" name="sex" value="0" required="required" />Female<br>
+    <input type="radio" name="sex" value="1" required="required" />Male<br>
+
+    <br>
+    <label for="bmi">Enter the BMI</label>
+    <input type="text" name="bmi" placeholder="15 - 35" required="required" /><br>
+    <br>
+    <label for="Number of Children">Enter the Number of Children</label>
+    <input type="text" name="children" placeholder="0 - 5" required="required" /><br>
+    <br>
+    <label for="Smoker">Select smoking Status</label><br>
+    <input type="radio" name="smoker" value="0" required="required" />Non-smoker<br>
+    <input type="radio" name="smoker" value="1" required="required" />Smoker<br>
+
+    <br>
+    <label for="Region">Select the Region</label> <br>
+    <input type="radio" name="region" value="1" required="required" />NorthEast<br>
+    <input type="radio" name="region" value="2" required="required" />SouthWest<br>
+    <input type="radio" name="region" value="3" required="required" />SouthEast<br>
+    <input type="radio" name="region" value="4" required="required" />NorthWest<br>
+
+    
+
+
+
+
+
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+
+<br>
+<br>
+
+
+</div>
+{{prediction_text}}
+
+</body>
+</html>
