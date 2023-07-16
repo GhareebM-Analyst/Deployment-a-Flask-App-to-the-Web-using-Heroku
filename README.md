@@ -1,4 +1,4 @@
-# End-to-End-Project-Development-a-Regression-Model-and-Deployment-using-Flask-App-to-the-Web-using-
+# End-to-End-Project-Development-a-Regression-Model-and-Deployment-using-Flask-App-to-the-Web
 
 
 In this project, xgboost algorithm was used to build a regression model to predict the medical cost utilizing age, sex, body mass index(bmi) , number of children, smoker/non-smoker, and region. The final model explained 82% of the variability in the data.
